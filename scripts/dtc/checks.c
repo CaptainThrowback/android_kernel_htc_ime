@@ -73,7 +73,7 @@ struct check {
 		.prereq = nm##_prereqs, \
 	};
 #define WARNING(nm, tfn, nfn, pfn, d, ...) \
-	CHECK_ENTRY(nm, tfn, nfn, pfn, d, false, false, __VA_ARGS__)
+	CHECK_ENTRY(nm, tfn, nfn, pfn, d, true, false, __VA_ARGS__)
 #define ERROR(nm, tfn, nfn, pfn, d, ...) \
 	CHECK_ENTRY(nm, tfn, nfn, pfn, d, false, true, __VA_ARGS__)
 #define CHECK(nm, tfn, nfn, pfn, d, ...) \
